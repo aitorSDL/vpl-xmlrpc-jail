@@ -4,4 +4,5 @@ compiler:
   - make
   
 script:
+  - cd src
   - make all
