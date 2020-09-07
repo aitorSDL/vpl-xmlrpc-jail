@@ -1,9 +1,8 @@
 language: cpp
 
 install:
-  - git clone git://github.com/aitorSDL/vpl-xmlrpc-jail.git
-  - tar xvf vpl-xmlrpc-jail-2.5.4.tar.gz
-  - cd vpl-xmlrpc-jail-2.5.4
+  - git clone -b 2.5.4 git://github.com/aitorSDL/vpl-xmlrpc-jail.git
+  - cd vpl-xmlrpc-jail
   - sudo make distcheck
   
 script:
