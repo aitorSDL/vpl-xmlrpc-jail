@@ -1,7 +1,9 @@
 language: cpp
 dist: trusty
 
+install:
+  - sudo apt-get install libtool-bin automake makeinfo
+  
 script:
-  - apt install libtool-bin automake makeinfo
   - autoreconf -f -i
   - make distcheck
