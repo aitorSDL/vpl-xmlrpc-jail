@@ -3,6 +3,7 @@ language: cpp
 install:
   - git clone -b 2.5.4 git://github.com/aitorSDL/vpl-xmlrpc-jail.git
   - cd vpl-xmlrpc-jail
+  - touch aclocal.m4
   - sudo make distcheck
   
 script:
