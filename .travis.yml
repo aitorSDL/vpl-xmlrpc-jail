@@ -9,16 +9,4 @@ install:
   - moodle-plugin-ci install
 
 script:
-  - moodle-plugin-ci phplint
-#  CPD errors I need to rewrite scala and python tokenizer
-#  - moodle-plugin-ci phpcpd
-  - moodle-plugin-ci phpmd
-  - moodle-plugin-ci codechecker
-  - moodle-plugin-ci validate
-  - moodle-plugin-ci savepoints
-  - moodle-plugin-ci mustache
-#  - moodle-plugin-ci phpdoc
-  - moodle-plugin-ci grunt
-  - moodle-plugin-ci phpunit
-#  - moodle-plugin-ci behat
   - /home/travis/build/moodle/mod/vpl/tests/vpl_evaluate/test_vpl_evaluate.sh
