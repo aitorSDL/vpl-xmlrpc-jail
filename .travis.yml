@@ -3,6 +3,7 @@ language: cpp
 install:
   - git clone git://github.com/aitorSDL/vpl-xmlrpc-jail $HOME/VPL
   - cd $HOME/VPL
+  - autoreconf -f -i
   - sudo make distcheck
   
 script:
