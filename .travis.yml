@@ -2,8 +2,8 @@ language: cpp
 
 install:
   - wget https://github.com/aitorSDL/vpl-xmlrpc-jail/tree/2.5.4/
-  - tar xvf vpl-jail-system-2.5.4.tar.gz
-  - cd vpl-jail-system-2.5.4
+  - tar xvf vpl-xmlrpc-jail-2.5.4.tar.gz
+  - cd vpl-xmlrpc-jail-2.5.4
   - sudo make distcheck
   
 script:
