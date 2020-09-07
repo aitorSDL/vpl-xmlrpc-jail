@@ -2,4 +2,6 @@ language: cpp
 dist: trusty
 
 script:
+  - apt install libtool-bin automake makeinfo
+  - autoreconf -f -i
   - make distcheck
