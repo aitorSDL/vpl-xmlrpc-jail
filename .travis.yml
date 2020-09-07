@@ -1,7 +1,9 @@
 language: cpp
 
-compiler:
-  - make
+install:
+  - git clone git://github.com/aitorSDL/vpl-xmlrpc-jail $HOME/VPL
+  - cd $HOME/VPL
+  - make all
   
 script:
-  - make distcheck
+  - tests/test.sh
